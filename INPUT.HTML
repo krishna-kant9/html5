@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form</title>
+</head>
+<body>
+    <form action="file.vhg" method="get">
+
+    
+    <div>
+ <b><label for="fname">firstname*</label></b>
+    <input type="text" id="fname" placeholder="enter first name" name="fname" required minlength="10"/>
+      </div>
+<br>
+<div>
+    <label for="lname">lastname*</label>
+    <input type="text" id="lname" placeholder="enter lastname" name="lname" />
+
+</div><br>
+<div>
+    <label for="email">email id*</label>
+<input type="email" placeholder="enter email" id="emal" name="email"  />
+</div><br>
+<div>
+<label for="paswd">password</label>
+<input type="password" placeholder="enter password" id="pw" name="pwdm"/>
+<br>
+</div>
+<div>
+    <label for="age">age</label>
+    <input type="number" placeholder="enter age" id="ag" min="18"  max="31"/>
+</div><br>
+<div>
+    <p>choose your gender</p>
+    <input type="radio" name="male" id="gn" value="kri"/><label for="gn">male</label>
+    <input type="radio" name="female" id="gn1" value="mam"/><label for="gn1">female</label>
+</div><br>
+<div>
+    <label for="dob">date of birth</label>
+    <input type="date"  id="db" name="dob"/>
+</div><br>
+<div>
+    <label for="dob">date of birth</label>
+    <input  type="datetime-local" id="db" name="dob"/>
+</div><br>
+<div>
+    <label for="">choose gender</label>
+    <select name="gende" id="gen">
+    <option value="m">male</option>
+    <option value="fe">female</option>
+    <option value="ot">other</option>
+</select>
+</div><br>
+<input type="submit"/>
+<input type="reset"/>
+<p>Choose Vehicle</p>
+<select name="vehicle" id="" multiple>
+    <optgroup label="bikes">
+        <option value="br15">R15</option>
+        <option value="pulsur">Pulsur</option>
+        <option value="duke">Duke</option>
+    </optgroup>
+    <optgroup label="cars">
+        <option value="bmw">BMW</option>
+        <option value="lamborgini">Lamborgini</option>
+    </optgroup>
+</select>
+<fieldset>
+    <legend>login form</legend>
+   
+    <input type="email" name="email" placeholder="enter email" id="">
+    <br><br>
+    <input type="password" name="pswd" placeholder="enter password">
+
+    <input type="submit">
+    <input type="reset">
+</fieldset>
+    </form>
+</body>
+</html>
